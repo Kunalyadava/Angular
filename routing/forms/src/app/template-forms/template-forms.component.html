@@ -1,0 +1,18 @@
+<h1>{{title1}}</h1>
+<h1>title without interpolation</h1>
+<form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+
+
+  <input type="text" name="name" placeholder="Enter Name" [(ngModel)]="name">
+  <br> <br>
+  <input type="password" name="password" placeholder="Enter Password"ngModel>
+  <br> <br>
+  <button> Login</button>
+</form>
+
+<legend>
+  Event Binding 
+</legend>
+<input #ti type="text">
+<button (click)="clickHandler(ti.value)">click Here </button>
+
